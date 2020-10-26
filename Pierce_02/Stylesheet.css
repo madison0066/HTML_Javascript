@@ -1,0 +1,52 @@
+        
+        html,body{
+            background-color: #494E6B;
+            background-image: url("images/backgroundtile.png");
+            display: flex;
+            justify-content: center;
+            color: #192231;
+
+        }
+        #container{
+            justify-content:center;
+            width:970px;
+            padding: 10px;
+
+        }
+
+        .header{
+            width: 950px;
+            padding: 10px;
+            background-color:#985E6D;
+            text-align: center;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            border-left: 5px solid white;
+            border-right: 5px solid white;
+            font-family:cursive
+
+            
+        }
+
+        .nav-bar{
+            text-align: center;
+            background-color:#192231 ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .sections{
+            width: 950px;
+            padding: 10px;
+            background-color:#98878F;
+            text-align: left;
+            
+        }
+        .img{
+            border: 10px double #192231
+        }
+        .btn{
+            color: white;
+            margin:20px;
+        }

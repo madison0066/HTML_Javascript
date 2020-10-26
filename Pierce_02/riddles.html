@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Bio</title>
+    <script> src="js/riddle-2.js"</script>
+    <style>
+        
+        html,body{
+            background-color: #494E6B;
+            background-image: url("images/backgroundtile.png");
+            display: flex;
+            justify-content: center;
+            color: #192231;
+
+        }
+        #container{
+            justify-content:center;
+            width:970px;
+            padding: 10px;
+
+        }
+
+        .header{
+            width: 950px;
+            padding: 10px;
+            background-color:#985E6D;
+            text-align: center;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            border-left: 5px solid white;
+            border-right: 5px solid white;
+            font-family:cursive
+
+            
+        }
+
+        .nav-bar{
+            text-align: center;
+            background-color:#192231 ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .sections{
+            width: 950px;
+            padding: 10px;
+            background-color:#98878F;
+            text-align: left;
+            
+        }
+        .img{
+            border: 10px double #192231
+        }
+        .btn{
+            color: white;
+            margin:20px;
+        }
+    </style>
+
+
+</head>
+<body>
+  <div id="container">
+      <div class="header">
+          <h1>Madison Pierce - Bio</h1>
+      </div>
+  
+    <div class="nav-bar">
+      <a href="index.html" class="btn">Home</a>
+      <a href="riddle.html" class="btn">Riddles</a>
+    </div>
+    <div class="sections">
+        <h2 class="title">Riddles</h2>
+        <p>What is black and white and read all over?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A Newspaper', 'answer1')">
+            <span id="answer1"></span>
+            <br>
+                <p>What walks on 4 legs, 3 legs, and is the same thing?</p>
+                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A human', 'answer2')">
+                <span id="answer2"></span>
+
+            <p>Why didnt the monster eat the crazy person?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('He is allergic to nuts!', 'answer3')">
+
+            <p>A sphere has three, a circle two, and a point has zero. What is it?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Dimensions', 'answer4')">
+
+            <p>You live in a story house made entirely of redwood. What color would the stairs be?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('What stairs? You live in a one story house!', 'answer5')">
+
+            <p>What has arms and legs but no head?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A chair', 'answer6')">
+
+            <p>How many sides does a circle have?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Two. The inside and outside duh!', 'answer7')">
+
+            <p>Why is Europe like a frying pan?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Because Greece is at the bottom', 'answer8')">
+
+            <p>What belongs to you, but other people use it more often than you do?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Your name.', 'answer9')">
+
+            <p>I am not alive, but I grow; I dont have lungs, but I need air; I dont have a mouth, but water kills me. What am I?</p>
+            <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Fire', 'answer10')">
+
+    </div>
+    </div>
+</body>
+</html>
