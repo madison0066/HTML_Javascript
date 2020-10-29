@@ -5,37 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Pierce_03.css">
+    <script src="riddle.js"></script>
 </head>
 
 <body>
     <div id="container">
-        <div id="header">Madison Pierce</div>
+        <div id="header">
+        <h1>Madison Pierce</h1>
+        </div>
 
         <div id="nav-bar">
             <a href="index.html" class="btn"> Bio</a>
-            <a href="#" class="btn"> Education</a>
-            <a href="riddles.html" class="btn"> Riddles</a>
+            <a href="education.html" class="btn"> Education</a>
+            <a href="#" class="btn"> Riddles</a>
         </div>
 
         <div id="content">
             <div class="content-left">
                 <h2>Riddles</h2>
-                <p>What is black and white and read all over?</p>
-                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A Newspaper', 'answer1')">
-                <span id="answer1"></span>
-                    <br>
-                    <p>What walks on 4 legs, 3 legs, and is the same thing?</p>
-                    <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A human', 'answer2')">
+                <div class="section">
+                    <p>What is black and white and read all over?</p>
+                    <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A Newspaper', 'answer1')">
+                    <span id="answer1"></span>
+                        <br>
+                        <p>What walks on 4 legs, 3 legs, and is the same thing?</p>
+                        <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A human', 'answer2')">
+                        <span id="answer2"></span>
+                        <p>What word becomes shorter when you add two letters to it?</p>
+                        <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Shorter', 'answer3')">
+                        <span id="answer3"></span>
+                        <p>What has four wheels and flies?</p>
+                        <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('The garbage truck', 'answer4')">
+                        <span id="answer4"></span>
+                </div>
             </div>
  
-        
             <div class="content-right">
-                <p>What is black and white and read all over?</p>
-                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A Newspaper', 'answer1')">
-                <span id="answer1"></span>
-                    <br>
-                    <p>What walks on 4 legs, 3 legs, and is the same thing?</p>
-                    <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('A human', 'answer2')">
+                <p>Which word in the dictionary is spelled incorrctly?</p>
+                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Incorrectly', 'answer5')">
+                <span id="answer5"></span>
+                <p>How many moths in the year have 28 days?</p>
+                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('All of them silly!', 'answer6')">
+                <span id="answer6"></span>
+                <p>Why didn't the monster eat the crazy person?</p>
+                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Because he was allergic to nuts!', 'answer7')">
+                <span id="answer7"></span>
+                <p>What is red and smells like blue paint?</p>
+                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('Red Paint.', 'answer8')">
+                <span id="answer8"></span>
+                <p>When is a door no longer a door?</p>
+                <input type="button" value="Answer" class="ans-btn" onclick="showAnswer('When it is ajar.', 'answer9')">
+                <span id="answer9"></span>
+
             </div>
         </div>
 

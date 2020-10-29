@@ -2,7 +2,6 @@ html,body{
     height:100%;
     display:flex;
     justify-content: center;
-    background-color: black;
     background-image: url("images/background-pattern-design-87.jpg");
     background-repeat:repeat;
 }
@@ -11,34 +10,35 @@ html,body{
     height:100%;
     display: flex;
     flex-direction: column;
+    background-color: #2C2B30;
 }
-#header{
-    background-color: #1F2833;
-    text-align: center;
-    font-family: initial;
-    width: 1000px;
-    height: 100px;
-    color:#66fcf1;
-    
 
+#header{
+    background-color: #f2c4ce;
+    text-align: center;
+    font-family:fantasy;
+    width: 1040px;
+    height: 200px;
+    color:#2C2B30;
+    
     
 }
 #nav-bar{
-    background-color: lightgrey;
+    background-color:#2C2B30;
     display: flex;
     justify-content: center;
 }
 #content{
-    background-color: teal;
+    background-color:#4f4f51;
     display: flex;
 }
-#footer{
-    background-color: yellow;
+.footer{
+    background-color:#f58f7c ;
     text-align: center;
-    line-height: 100px;
+    line-height: 50px;
 }
 .btn:link{
-    background-color: yellow;
+    background-color:#f58f7c;
     color:black;
     padding:10px;
     margin: 20px 20px 20px 0px;
@@ -58,17 +58,21 @@ html,body{
 }
 
 .btn:active{
-    background-color: green;
+    background-color: #d6d6d6;
 }
 
 .content-left{
     width: 500px;
     height: 500px;
-    background-color: darkred;
+    background-color: #d6d6d6;
+    color: black;
+    padding: 10px;
 }
 
 .content-right{
     width: 500px;
     height: 500px;
-    background-color: aquamarine;
+    background-color: #d6d6d6;
+    color: black;
+    padding:10px
 }
