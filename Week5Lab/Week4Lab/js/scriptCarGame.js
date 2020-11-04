@@ -2,18 +2,8 @@
 
 var c = document.querySelector('canvas');
 var ctx = c.getContext('2d');
-var aang = new Image();
-aang.src = 'images/aangSprite.png';
-
-var katara = new Image();
-katara.src = 'images/kataraSprite.png';
-
-var appa = new Image();
-appa.src = 'images/appa.png';
-
-var background= new Image();
-background.src = 'images/landscape2.jpg';
-
+var mario = new Image();
+mario.src = 'images/mario.png';
 
 
 //This will start the timer for the animation
@@ -22,14 +12,14 @@ var timer = requestAnimationFrame(draw);
 var x = 0;
 
 //Values represent the start and finish line
-var start = 58;
-var finish = 956;
+var start = 105;
+var finish = 700;
 
 //Fuel Values
-var startFuel = 860;
+var startFuel = 702;
 var fuel = startFuel;
 
-var barFullWidth = 512;
+var barFullWidth = 300;
 
 //Start Timer Stuff
 var sec = 3;
@@ -46,16 +36,17 @@ function draw() {
 
 
     //Draw everything to the screen
+ 
 
-    drawBackground()
+
+
+
     drawStartLine()
     drawFinishLine()
+    drawCar()
     drawSprite()
-    drawSprite2()
-    drawSprite3()
     drawFuelBar()
     drawFuelText()
-
 
     if (sec > 0){ 
         runStartTimer();
@@ -91,7 +82,7 @@ function runStartTimer(){
 }
 
 function drawStartTimer(){
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'black';
     ctx.font = '30px Arial';
     ctx.textAlign = "center"
     ctx.fillText(sec, c.width / 2, c.height / 2)
@@ -100,14 +91,14 @@ function drawStartTimer(){
 
 function drawResults() {
     if (x + 100 > finish) {
-        ctx.fillStyle = 'white';
-        ctx.font = '30px Oswald';
+        ctx.fillStyle = 'black';
+        ctx.font = '30px Arial';
         ctx.textAlign = "center"
         ctx.fillText("You made it, you win!", c.width / 2, c.height / 2)
     }
     else {
-        ctx.fillStyle = 'white';
-        ctx.font = '30px Oswald';
+        ctx.fillStyle = 'black';
+        ctx.font = '30px Arial';
         ctx.textAlign = "center"
         ctx.fillText("You ran out of fuel, you lost :(", c.width / 2, c.height / 2)
     }
@@ -116,40 +107,34 @@ function drawResults() {
 
 
 function drawSprite(){
-    ctx.drawImage(aang, x, 100, 200, 200);
+    ctx.drawImage(mario, x, 50, 100, 200);
 }
 
-function drawBackground(){
-    ctx.drawImage(background, 0, 0, 1042, 786);
-}
+function drawCar() {
+    ctx.fillStyle = 'teal';
+    ctx.fillRect(x, c.height / 2, 100, 50);
 
-function drawSprite2(){
-    ctx.drawImage(katara, x, 350, 200, 200);
-}
-
-function drawSprite3(){
-    ctx.drawImage(appa, x, 500, 300, 200);
 }
 
 function drawStartLine() {
-    ctx.fillStyle = 'black';
-    ctx.fillRect(start, 100, 10, 600);
+    ctx.fillStyle = 'green';
+    ctx.fillRect(start, 100, 10, 400);
 }
 
 function drawFinishLine() {
-    ctx.fillStyle = 'green';
-    ctx.fillRect(finish, 100, 10, 600);
+    ctx.fillStyle = 'purple';
+    ctx.fillRect(finish, 100, 10, 400);
 }
 
 function drawFuelBar() {
     var currentBarWidth = barFullWidth * getFuelPercent();
-    ctx.fillStyle = 'lightblue';
+    ctx.fillStyle = 'yellow';
     ctx.fillRect(start, 70, currentBarWidth, 20);
 }
 
 function drawFuelText() {
     ctx.fillStyle = 'black';
-    ctx.font = '30px Oswald';
+    ctx.font = '30px Arial';
     ctx.fillText(fuel.toFixed(0), start, 45);
 
 }

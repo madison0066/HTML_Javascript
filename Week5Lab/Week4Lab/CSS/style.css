@@ -3,7 +3,6 @@
 html,body{
     height: 100%;
     margin: 0;
-
 }
 
 body{
@@ -13,10 +12,9 @@ body{
 }
 
 #container{
-    width: 1024px;
+    width: 1000px;
     padding: 10px;
-    height: 1000px;
-    background-color: rgb(181, 219, 120);
+    background-color: cornflowerblue;
 }
 
 header{
@@ -38,7 +36,7 @@ main{
 
 canvas{
     border: 1px solid black;
-
+    background-color: white;
 }
 
 footer{
