@@ -1,0 +1,49 @@
+
+
+html,body{
+    height: 100%;
+    margin: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#container{
+    width: 1024px;
+    padding: 10px;
+    height: 1000px;
+}
+
+header{
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav{
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+canvas{
+    border: 1px solid black;
+
+}
+
+footer{
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+
+}
