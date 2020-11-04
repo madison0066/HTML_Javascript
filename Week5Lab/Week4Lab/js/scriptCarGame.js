@@ -26,6 +26,13 @@ var sec = 3;
 var fps = 60;
 var frames = fps;
 
+//create instance of class 
+var car = Car();
+
+console.log(car.x, car.y);
+
+
+
 
 function draw() {
 
@@ -41,8 +48,10 @@ function draw() {
 
 
 
-    drawStartLine()
-    drawFinishLine()
+    //drawStartLine()
+    drawBox('green',start, 100, 10, 400)
+    //drawFinishLine()
+    drawBox('orange',finish, 100, 10, 400)
     drawCar()
     drawSprite()
     drawFuelBar()
@@ -125,6 +134,13 @@ function drawFinishLine() {
     ctx.fillStyle = 'purple';
     ctx.fillRect(finish, 100, 10, 400);
 }
+
+
+function drawBox(color,x,y,w,h){
+    ctx.fillStyle = color;
+    ctxfillRect(x,y,w,h);
+}
+
 
 function drawFuelBar() {
     var currentBarWidth = barFullWidth * getFuelPercent();

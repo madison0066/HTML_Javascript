@@ -14,6 +14,10 @@ appa.src = 'images/appa.png';
 var background= new Image();
 background.src = 'images/landscape2.jpg';
 
+var elements= new Image();
+elements.src = 'images/elements.jpg'
+
+
 
 
 //This will start the timer for the animation
@@ -48,6 +52,7 @@ function draw() {
     //Draw everything to the screen
 
     drawBackground()
+    drawElements()
     drawStartLine()
     drawFinishLine()
     drawSprite()
@@ -92,7 +97,7 @@ function runStartTimer(){
 
 function drawStartTimer(){
     ctx.fillStyle = 'white';
-    ctx.font = '30px Arial';
+    ctx.font = '50px Arial';
     ctx.textAlign = "center"
     ctx.fillText(sec, c.width / 2, c.height / 2)
 }
@@ -113,6 +118,10 @@ function drawResults() {
     }
 }
 
+
+function drawElements(){
+    ctx.drawImage(elements, 35, 20, 550, 110);
+}
 
 
 function drawSprite(){
@@ -148,9 +157,9 @@ function drawFuelBar() {
 }
 
 function drawFuelText() {
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = 'white';
     ctx.font = '30px Oswald';
-    ctx.fillText(fuel.toFixed(0), start, 45);
+    ctx.fillText(fuel.toFixed(0), start, 60);
 
 }
 
