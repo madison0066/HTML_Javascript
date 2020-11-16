@@ -37,7 +37,7 @@ btn[2].addEventListener(`click`, function(e){
         var cChoice = Math.floor(Math.random()*2.999999)
 
         ctx.fillStyle = "darkblue"
-        ctx.font = "45px Georgia"
+        ctx.font = "40px Georgia"
         ctx.textAlign = 'center';
         ctx.fillText("Player's Choice: " + rps[pChoice] + " Computer choice: " + rps[cChoice], c.width/2, c.height/2) 
 
