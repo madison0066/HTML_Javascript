@@ -1,10 +1,12 @@
 body{
     display:flex;
     justify-content:center;
+    background-color: lightblue
 }
 nav{
     display:flex;
     justify-content:center;
+    background-color: gray;
 }
 #container{
     box-sizing:border-box;
@@ -18,7 +20,7 @@ canvas{
 }
 a:link, a:visited{
     display:inline-block;
-    background-color:yellow;
+    background-color:lightpink;
     padding:10px;
     margin:20px;
 }

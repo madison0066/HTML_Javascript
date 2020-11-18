@@ -1,7 +1,7 @@
 
 
-var c = document.querySelector('canvas');
-var ctx = c.getContext('2d');
+    var c = document.querySelector('canvas');
+    var ctx = c.getContext('2d');
 
 //Array of words
 var rps = [];
@@ -39,7 +39,8 @@ btn[2].addEventListener(`click`, function(e){
         ctx.fillStyle = "darkblue"
         ctx.font = "40px Georgia"
         ctx.textAlign = 'center';
-        ctx.fillText("Player's Choice: " + rps[pChoice] + "|| Computer choice: " + rps[cChoice], c.width/2, c.height/2) 
+        ctx.fillText("Player's Choice: " + rps[pChoice] + "|| Computer choice: " + rps[cChoice], c.width/2, c.height/2);
+        ctx.drawImage(img,10,10);
 
         
 
